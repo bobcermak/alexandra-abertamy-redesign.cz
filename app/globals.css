@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  /*Font Families*/
+  --font-montserrat: var(--font-montserrat-next);
+  /*Font Sizes*/
+  --text-body: 1rem; /* 16px */
+  --text-caption-body: 1.05rem; /* 16.8px */
+  --text-sub: 1.269140625rem; /* 20.31px */
+  --text-title: 2.19984375rem; /* 35.2px */
+  --text-sub-heading: 3.10234375rem; /* 49.64px */
+  --text-heading: 3.21245363rem; /* 51.4px */
+  --text-display: 4.23046875rem; /* 67.69px */
+  /*Colors*/
+  --color-red: #512100;
+  --color-green: #2F4B3C;
+  --color-white: #ffffff;
+  --color-dark: #2A211A;
+  --color-cream: #F7F4ED;
+  --color-yellow: #B47E3C;
+  --color-lime: #8AA394;
+  --color-light-gold: #ECD7A8;
+  /*Shadows*/
+  --shadow-primary: 0px 2px 12px 0px rgba(0, 2, 34, 0.15);
+  --shadow-secondary: 0px 4px 12px 0px rgba(0, 2, 34, 0.5);
+  --shadow-button--red: 0px 0px 12px 0px rgba(81, 33, 0, 0.25);
+  --shadow-button--green: 0px 0px 8px 0px rgba(47, 75, 60, 0.25);
+  --shadow-button--black: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  --inner-shadow-primary: inset 0px 4px 12px 0px rgba(0, 2, 34, 0.25);
+  /*Drop shadows (single shadow across a compound/multi-piece element, e.g. pill + arrow circle)*/
+  --drop-shadow-button--red: 0px 0px 12px rgba(81, 33, 0, 0.25);
+  --drop-shadow-button--green: 0px 0px 8px rgba(47, 75, 60, 0.25);
+  --drop-shadow-button--black: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  /*Breakpoints*/
+  --breakpoint-sphone: 361px;
+  --breakpoint-phone: 401px;
+  --breakpoint-xphone: 541px;
+  --breakpoint-stablet: 641px;
+  --breakpoint-tablet: 761px;
+  --breakpoint-slaptop: 961px;
+  --breakpoint-mlaptop: 1024px;
+  --breakpoint-laptop: 1281px;
+  --breakpoint-sdesktop: 1401px;
+  --breakpoint-desktop: 1537px;
+  --breakpoint-xdesktop: 1761px;
+  --breakpoint-xldesktop: 1841px;
+  --breakpoint-xxldesktop: 2101px;
+  /*Widths*/
+  --width-container: 90vw;
+  --width-container: 90svw;
+  --width-xcontent: 85vw;
+  --width-xcontent: 85svw;
+  --width-content: 80vw;
+  --width-content: 80svw;
+  --width-section: 56vw;
+  --width-section: 56svw;
+}
+
+html {
+  font-weight: 400;
+  font-size: var(--text-body, 1rem);
+  line-height: 1.5rem;
+  letter-spacing: -0.5%;
+  color: var(--color-dark, #2A211A);
+  background-color: var(--color-white, #ffffff);
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overscroll-behavior: none;
+}
+
+/*img / iframe - responsive*/
+
+.img-responsive,
+.iframe-responsive {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/*svg - responsive*/
+
+.svg-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/*Inner shadow*/
+
+.inner-shadow-primary {
+  box-shadow: var(--inner-shadow-primary, inset 0px 4px 12px 0px rgba(0, 2, 34, 0.25));
+}
+
+@media screen and (min-width: 1281px) {
+  .inner-shadow-none {
+    box-shadow: none;
+  }
+}
+
+/*Animations*/
+
+@keyframes drawLines {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hero-lines-anim path {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: drawLines 2.5s ease-in-out forwards;
+}
+
+@layer components {
+  p {
+    @apply text-body font-medium leading-normal text-dark text-left;
+  }
+
+  h1 {
+    @apply text-sub-heading uppercase laptop:text-heading desktop:text-display font-bold leading-tight text-white text-left mb-4 laptop:mb-5 desktop:mb-6;
+  }
+
+  h2 {
+    @apply text-sub uppercase font-medium text-green bg-green/20 py-1 px-4 rounded-[15px] w-fit;
+  }
+
+  h3 {
+    @apply text-sub-heading desktop:text-heading font-medium leading-tight text-dark text-left mb-4 laptop:mb-5 desktop:mb-6;
+  }
+
+  h4, h5, h6 {
+    @apply text-sub-heading desktop:text-heading font-medium leading-tight text-dark text-left;
+  }
+
+  ul {
+    @apply list-disc list-outside;
+  }
+
+  ol {
+    @apply list-decimal list-outside;
+  }
+
+  li {
+    @apply text-body font-medium leading-normal text-dark m-0 p-0 list-none;
+  }
+
+  img {
+    @apply block w-full h-full object-cover m-0 p-0;
+  }
+
+  figure {
+    @apply m-0 p-0;
+  }
+}
