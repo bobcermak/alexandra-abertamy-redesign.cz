@@ -16,15 +16,15 @@ const Hamburger: FC<HamburgerProps> = ({ isOpen, onToggle, className }) => {
     >
       <div className="relative block w-6 h-6 overflow-hidden">
         <span
-          className={`absolute h-[1.5px] bg-dark rounded-2xl left-0 right-0 transition-all ease-in-out ${isOpen ? "top-[50%] translate-y-[-50%]" : "top-0"}`}
+          className={`absolute h-[2px] bg-dark rounded-2xl left-0 right-0 transition-all ease-in-out ${isOpen ? "top-[50%] translate-y-[-50%]" : "top-0"}`}
           style={{
             transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
             transition: isOpen ? "top 150ms ease-in-out, transform 150ms ease-in-out 250ms" : "top 150ms ease-in-out 250ms, transform 150ms ease-in-out",
           }}
         ></span>
-        <span className={`absolute h-[1.5px] bg-dark rounded-2xl left-0 top-[50%] translate-y-[-50%] right-0 transition-all ease-in-out delay-150 ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
+        <span className={`absolute h-[2px] bg-dark rounded-2xl left-0 top-[50%] translate-y-[-50%] right-0 transition-all ease-in-out delay-150 ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
         <span
-          className={`absolute h-[1.5px] bg-dark rounded-2xl left-0 right-0 transition-all ease-in-out ${isOpen ? "bottom-[50%]" : "bottom-0"}`}
+          className={`absolute h-[2px] bg-dark rounded-2xl left-0 right-0 transition-all ease-in-out ${isOpen ? "bottom-[44%]" : "bottom-0"}`}
           style={{
             transform: isOpen ? "rotate(-45deg)" : "rotate(0deg)",
             transition: isOpen ? "bottom 150ms ease-in-out, transform 150ms ease-in-out 250ms" : "bottom 150ms ease-in-out 250ms, transform 150ms ease-in-out",
