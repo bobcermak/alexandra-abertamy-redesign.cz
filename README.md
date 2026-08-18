@@ -1,6 +1,6 @@
 # Chata Alexandra | Horská chata v Hřebečné u Abertam
 
-![Mockup webu Alexandra Abertamy](/)
+![Mockup webu Alexandra Abertamy](/public/images/content/ab-redesign-mockup.png)
 
 > 🌐 Náhled webu – moderní, responzivní, postavené v **Next.js**  
 
