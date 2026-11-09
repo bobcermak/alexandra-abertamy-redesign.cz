@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Chata Alexandra | Horská chata pro celou partu - Hřebečná, Abertamy",
     template: "%s | Chata Alexandra"
   },
-  description: "Soukromá chata Alexandra v Hřebečné u Abertam. Až 15 hostů, vlastní sauna, plně vybavená kuchyň a klid Krušných hor — po celý rok. V provozu od roku 1927.",
+  description: "Soukromá chata Alexandra v Hřebečné u Abertam. Až 15 hostů, vlastní sauna, plně vybavená kuchyň a klid Krušných hor - po celý rok. V provozu od roku 1927.",
   referrer: "strict-origin-when-cross-origin",
   keywords: [
     "chata Alexandra",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://alexandra-abertamy.cz",
     siteName: "Chata Alexandra",
     title: "Chata Alexandra | Horská chata pro celou partu - Hřebečná, Abertamy",
-    description: "Až 15 hostů, vlastní sauna, plně vybavená kuchyň a klid Krušných hor — po celý rok. V provozu od roku 1927."
+    description: "Až 15 hostů, vlastní sauna, plně vybavená kuchyň a klid Krušných hor - po celý rok. V provozu od roku 1927."
   },
   icons: {
     icon: [
@@ -68,7 +68,7 @@ export default function RootLayout({
               "@type": "LodgingBusiness",
               name: "Chata Alexandra",
               description:
-                "Soukromá horská chata v Hřebečné u Abertam. Pronájem celé chaty pro skupiny — až 15 hostů, 5 pokojů, vlastní sauna a plně vybavená kuchyň. V provozu od roku 1927.",
+                "Soukromá horská chata v Hřebečné u Abertam. Pronájem celé chaty pro skupiny - až 15 hostů, 5 pokojů, vlastní sauna a plně vybavená kuchyň. V provozu od roku 1927.",
               url: "https://alexandra-abertamy.cz",
               telephone: "+420602726090",
               address: {

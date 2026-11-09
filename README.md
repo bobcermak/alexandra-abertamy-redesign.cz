@@ -2,17 +2,17 @@
 
 ![Mockup webu Alexandra Abertamy](/public/images/content/ab-redesign-mockup.png)
 
-> 🌐 Náhled webu – moderní, responzivní, postavené v **Next.js**  
+> 🌐 Náhled webu - moderní, responzivní, postavené v **Next.js**  
 
 [🚀 Otevřít web](/)
 
-> 🏔️ Redesign webu, vlastní CMS a rezervační systém pro soukromou horskou chatu v Krušných horách — postaveno v **Next.js 16** (App Router) + **TypeScript**.
+> 🏔️ Redesign webu, vlastní CMS a rezervační systém pro soukromou horskou chatu v Krušných horách - postaveno v **Next.js 16** (App Router) + **TypeScript**.
 
 ---
 
 ## O projektu
 
-Chata Alexandra stojí v Hřebečné u Abertam už od roku **1927**. Není to hotel po pokojích — pronajímá se **celá chata jako jeden celek** (min. 8 dospělých, kapacita až 15 hostů, 5 pokojů). Tenhle projekt nahrazuje původní jednostránkový web bez reálné rezervace za:
+Chata Alexandra stojí v Hřebečné u Abertam už od roku **1927**. Není to hotel po pokojích - pronajímá se **celá chata jako jeden celek** (min. 8 dospělých, kapacita až 15 hostů, 5 pokojů). Tenhle projekt nahrazuje původní jednostránkový web bez reálné rezervace za:
 
 - 🌐 nový marketingový web (Domů · Ubytování · Rezervace & ceník · Akce & blog · Kontakt),
 - 📅 vlastní **rezervační systém** (request-to-book, kalendář obsazenosti, automatický přepočet ceny, iCal sync s Booking.com),
@@ -72,4 +72,4 @@ Podrobnosti naleznete v souboru [LICENSE](LICENSE.txt).
 
 **Autor:** Bob Čermák 🛠️
 
-> ⚡ Vizuální styl vychází z teplé, "horské lodge" estetiky — dřevo, kůže, jehličí, hodně krémového prostoru a velké přírodní fotky, bez stockových fotek lidí.
+> ⚡ Vizuální styl vychází z teplé, "horské lodge" estetiky - dřevo, kůže, jehličí, hodně krémového prostoru a velké přírodní fotky, bez stockových fotek lidí.

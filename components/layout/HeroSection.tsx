@@ -47,7 +47,7 @@ const HeroSection: FC<HeroSectionProps> = ({ title = "Celá horská chata jen pr
                             <span className="rounded-md bg-red px-1 py-px [-webkit-box-decoration-break:clone] [box-decoration-break:clone]">
                                 Až 15 hostů
                             </span>
-                            , vlastní sauna, plně vybavená kuchyň a klid Krušných hor — po celý rok. V provozu od roku{" "}
+                            , vlastní sauna, plně vybavená kuchyň a klid Krušných hor - po celý rok. V provozu od roku{" "}
                             <span className="rounded-md bg-green px-2 py-px text-white [-webkit-box-decoration-break:clone] [box-decoration-break:clone]">
                                 1927.
                             </span>
